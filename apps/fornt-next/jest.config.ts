@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'fornt-next',
+  displayName: 'front-next',
   preset: '../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/next/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/fornt-next',
+  coverageDirectory: '../../coverage/apps/front-next',
 };

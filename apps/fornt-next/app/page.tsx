@@ -14,7 +14,7 @@ export default async function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome fornt-next 👋 {shared()}
+              Welcome front-next 👋 {shared()}
             </h1>
           </div>
 
