@@ -1,4 +1,5 @@
 import styles from './page.module.scss';
+import { shared } from '@nx-monorepo/shared';
 
 export default async function Index() {
   /*
@@ -13,7 +14,7 @@ export default async function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome fornt-next 👋
+              Welcome fornt-next 👋 {shared()}
             </h1>
           </div>
 

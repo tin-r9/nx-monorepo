@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { shared } from '@nx-monorepo/shared';
 
 @Component({
   selector: 'nx-monorepo-nx-welcome',
@@ -420,7 +421,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         <div id="welcome">
           <h1>
             <span> Hello there, </span>
-            Welcome front-angular 👋
+            Welcome front-angular 👋 {{textShared}}
           </h1>
         </div>
         <!--  HERO  -->
@@ -850,4 +851,6 @@ nx affected:e2e</pre>
   styles: [],
   encapsulation: ViewEncapsulation.None,
 })
-export class NxWelcomeComponent {}
+export class NxWelcomeComponent {
+  textShared = shared();
+}
